@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Subas Thapa | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Inter", sans-serif;
+    }
+
+    body {
+      background-color: #fafafa;
+      color: #111;
+    }
+
+    /* HEADER */
+    header {
+      padding: 25px 60px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    .logo-dot {
+      width: 14px;
+      height: 14px;
+      background: #f4b400;
+      border-radius: 50%;
+    }
+
+    /* MAIN */
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: calc(100vh - 200px);
+      padding: 40px 60px;
+      gap: 80px;
+    }
+
+    .profile-img {
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      object-fit: cover;
+      filter: grayscale(100%);
+    }
+
+    .content h1 {
+      font-size: 64px;
+      margin-bottom: 10px;
+    }
+
+    .content h3 {
+      font-size: 20px;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    .content p {
+      max-width: 480px;
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 35px;
+      color: #444;
+    }
+
+    /* BUTTONS */
+    .buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      max-width: 520px;
+    }
+
+    .btn {
+      padding: 14px 22px;
+      border-radius: 6px;
+      border: 2px solid #111;
+      text-decoration: none;
+      font-weight: 600;
+      color: #111;
+      transition: all 0.2s ease;
+      background: transparent;
+    }
+
+    .btn:hover {
+      background: #111;
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid #ddd;
+      padding: 30px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+    }
+
+    .social i {
+      margin-left: 15px;
+      font-size: 16px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .content h1 {
+        font-size: 48px;
+      }
+
+      .buttons {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="logo">
+    <div class="logo-dot"></div>
+    <span>Subas Thapa</span>
+  </div>
+</header>
+
+<!-- MAIN -->
+<section class="container">
+  <img src="images/myimage.JPG" alt="Profile Photo" class="profile-img">
+
+  <div class="content">
+    <h1>Hello</h1>
+    <h3>A Bit About Me</h3>
+    <p>
+      ISTQB Certified Tester (Foundation Level) with over 8 years of experience in manual and automation testing across web and
+      mobile applications. Proven expertise in designing and implementing scalable automation frameworks from scratch using Python,
+      Java, and JavaScript, and integrating them into CI/CD pipelines with Jenkins and Azure DevOps. Strong experience in API, database, functional, and non-functional testing, with a solid understanding of SDLC, QA methodologies, and testing best practices. Recognised for excellent communication, organisation, and time-management skills, with a strong ability to collaborate in cross-functional teams and deliver high-quality results on complex, large-scale projects.
+    </p>
+
+    <!-- SINGLE NAVIGATION SECTION -->
+    <div class="buttons">
+      <a href="experience.html" class="btn">Experience</a>
+      <a href="projects.html" class="btn">Projects</a>
+      <a href="skills.html" class="btn">Skills</a>
+      <a href="certifications.html" class="btn">Certificates</a>
+      <a href="education.html" class="btn">Education</a>
+      <a href="volunteer.html" class="btn">Volunteer</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <p><strong>Phone</strong><br>+44 7585 850572</p>
+    <p><strong>Email</strong><br>subasthapa.official@gmail.com</p>
+  </div>
+
+  <div class="social">
+    <strong>Follow Me</strong>
+    <a href="https://www.linkedin.com/in/subas-thapa/" target="_blank">
+      <i class="fa fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/subasthapa1" target="_blank">
+      <i class="fa fa-github"></i>
+    </a>
+  </div>
+</footer>
+
+</body>
+</html>
